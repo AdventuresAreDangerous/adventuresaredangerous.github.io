@@ -16,6 +16,8 @@
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
 	gtag('config', 'UA-148227027-1');
+	
+	var filename_regex = /([^\/]*[.]\w\w\w)/g;
 
 	// tracks clicks
 	var track_outbound_link_click = function(url)
@@ -26,9 +28,10 @@
 	{
 		gtag('event', 'click', {'event_label': label, 'event_category': 'social'});
 	}
-	var track_merch_click = function(label)
+	var track_merch_click = function(merch_type, merch_image)
 	{
-		gtag('event', 'click', {'event_label': label, 'event_category': 'merch'});
+		var image_name = filename_regex.exec(merch_image)[1];
+		gtag('event', 'click', {'event_label': image_name, 'event_category': 'merch-'+merch_type});
 	}
 	var track_pineapple_click = function(label)
 	{
@@ -40,9 +43,10 @@
 	{
 		gtag('event', 'mouseover', {'event_label': label, 'event_category': 'social'});
 	}
-	var track_merch_mouseover = function(label)
+	var track_merch_mouseover = function(merch_type, merch_image)
 	{
-		gtag('event', 'mouseover', {'event_label': label, 'event_category': 'merch'});
+		var image_name = filename_regex.exec(merch_image)[1];
+		gtag('event', 'mouseover', {'event_label': image_name, 'event_category': 'merch-'+merch_type});
 	}
 </script>
 
@@ -185,7 +189,7 @@ div
 <h2>✨ <u>s h o p</u> ✨</h2>
 <div class="merch-block" name="merch-block" align="center">
 	<font color="#FFFFFF">
-	<a href="https://bit.ly/nightlydiecut" class="merch-title" onclick="track_merch_click('die_cut_sticker');" onmouseover="track_merch_mouseover('die_cut_sticker');">
+	<a href="https://bit.ly/nightlydiecut" class="merch-title" onclick="track_merch_click('die_cut_sticker', document.getElementById('die_cut_sticker').src);" onmouseover="track_merch_mouseover('die_cut_sticker', document.getElementById('die_cut_sticker').src);">
 		<p>
 		<img src="empty.jpg" width="350" height="263" class="padded-all-sides" id="die_cut_sticker">
 		<br>die-cut stickers
@@ -196,7 +200,7 @@ div
 <span name = "verticalspace"></span>
 <div class="merch-block" name="merch-block" align="center">
 	<font color="#FFFFFF">
-	<a href="https://bit.ly/nightlyrectangular" class="merch-title" onclick="track_merch_click('rectangular_sticker');" onmouseover="track_merch_mouseover('rectangular_sticker');">
+	<a href="https://bit.ly/nightlyrectangular" class="merch-title" onclick="track_merch_click('rectangular_sticker', document.getElementById('rectangular_sticker').src);" onmouseover="track_merch_mouseover('rectangular_sticker', document.getElementById('rectangular_sticker').src);">
 		<p>
 		<img src="empty.jpg" width="350" height="263" class="padded-all-sides" id="rectangular_sticker">
 		<br>rectangular stickers
@@ -205,7 +209,7 @@ div
 	</font>
 </div>
 <span name = "verticalspace"></span>
-<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('transparent_sticker');" onmouseover="track_merch_mouseover('transparent_sticker');">
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('transparent_sticker', document.getElementById('transparent_sticker').src);" onmouseover="track_merch_mouseover('transparent_sticker', document.getElementById('transparent_sticker').src);">
 	<font color="#FFFFFF">
 	<a href="https://bit.ly/nightlytransparent" class="merch-title">
 		<p>
@@ -220,7 +224,7 @@ div
 
 <span name = "smallverticalspace"></span>
 <div class="slowappear" align="center">
-<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('amazon_shirts_us');" onmouseover="track_merch_mouseover('amazon_shirts_us');">
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('amazon_shirts_us', document.getElementById('amazon_shirts_us').src);" onmouseover="track_merch_mouseover('amazon_shirts_us', document.getElementById('amazon_shirts_us').src);">
 	<font color="#FFFFFF">
 	<a href="https://bit.ly/nightlyUSshop" class="merch-title">
 		<p>
@@ -231,7 +235,7 @@ div
 	</font>
 </div>
 <span name = "verticalspace"></span>
-<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('amazon_shirts_uk');" onmouseover="track_merch_mouseover('amazon_shirts_uk');">
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('amazon_shirts_uk', document.getElementById('amazon_shirts_uk').src);" onmouseover="track_merch_mouseover('amazon_shirts_uk');">
 	<font color="#FFFFFF">
 	<a href="https://bit.ly/nightlyUKshop" class="merch-title">
 		<p>
