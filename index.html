@@ -203,6 +203,54 @@ div
 
 <script type="text/javascript" src="captions.js"></script>
 <script type="text/javascript">
+	// SELECTING A RANDOM ART
+	// selects a random number between min and max (inclusive)
+	function random_number(min, max)
+	{
+		return parseInt((min + Math.random() * (max - min + 1)), 10);
+	}
+	
+	function number_digits(number)
+	{
+		return Math.ceil(Math.log10(number));
+	}
+	
+	// pads number with zeros until it is 4 digits long
+	function pad_number(number)
+	{
+		var target_number_digits=4;
+		
+		var zeros_to_add=target_number_digits - number_digits(number);
+		for(var zero=0; zero < zeros_to_add; zero++)
+		{
+			number="0" + number;
+		}
+		return(number);
+	}
+	
+	// sets art to a new art
+	var art_number;
+	function select_art_image()
+	{
+		art_number=random_number(1, 303);
+		var art_file="arts/" + pad_number(art_number) + ".jpg";
+		document.getElementById("art").src=art_file;
+	}
+	function set_art_caption()
+	{
+		document.getElementById("art_caption").innerHTML=captions[art_number].replace("BR", "<br>");
+	}
+	
+	// chooses a random art until it exists
+	document.getElementById("art").onerror=function()
+	{
+		// image did not load
+		select_art_image();
+		set_art_caption();
+	}
+	select_art_image();
+	set_art_caption();
+	
 	// GRADUALLY FADES IN CONTENT
 	// sets opacity (between 0 and 100) for parameter element
 	// based on https://stackoverflow.com/a/2207751
@@ -379,55 +427,6 @@ div
 		}
 		document.getElementById(element_id).src = new_file;
 	}
-	
-	
-	// SELECTING A RANDOM ART
-	// selects a random number between min and max (inclusive)
-	function random_number(min, max)
-	{
-		return parseInt((min + Math.random() * (max - min + 1)), 10);
-	}
-	
-	function number_digits(number)
-	{
-		return Math.ceil(Math.log10(number));
-	}
-	
-	// pads number with zeros until it is 4 digits long
-	function pad_number(number)
-	{
-		var target_number_digits=4;
-		
-		var zeros_to_add=target_number_digits - number_digits(number);
-		for(var zero=0; zero < zeros_to_add; zero++)
-		{
-			number="0" + number;
-		}
-		return(number);
-	}
-	
-	// sets art to a new art
-	var art_number;
-	function select_art_image()
-	{
-		art_number=random_number(1, 1000);
-		var art_file="arts/" + pad_number(art_number) + ".jpg";
-		document.getElementById("art").src=art_file;
-	}
-	function set_art_caption()
-	{
-		document.getElementById("art_caption").innerHTML=captions[art_number].replace("BR", "<br>");
-	}
-	
-	// chooses a random art until it exists
-	document.getElementById("art").onerror=function()
-	{
-		// image did not load
-		select_art_image();
-		set_art_caption();
-	}
-	select_art_image();
-	set_art_caption();
 
 </script>
 </body>
