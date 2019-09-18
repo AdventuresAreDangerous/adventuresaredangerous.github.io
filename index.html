@@ -433,7 +433,17 @@ div
 		document.getElementById(element_id).src = new_file;
 	}
 	
-	var touchDevice = ('ontouchstart' in document.documentElement);
+	
+	// CUSTOMIZES VIEW FOR TOUCH DEVICES
+	var is_touch_device = ('ontouchstart' in document.documentElement);
+	if(is_touch_device)
+	{
+		var elements=document.getElementsByName("social");
+		for(var index=0; index < elements.length; index++)
+		{
+			elements[index].setAttribute("class", "padded-color");
+		}
+	}
 
 </script>
 </body>
