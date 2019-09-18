@@ -231,15 +231,6 @@ div
 <script type="text/javascript" src="captions.js"></script>
 <script type="text/javascript">
 
-	// FORCING SCROLL TO TOP ON RELOAD
-	window.onbeforeunload = function()
-	{
-	  window.scrollTo(0, 0);
-	}
-	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-	document.body.scrollTop = 0; // For Safari
-
-	
 	// SELECTING A RANDOM ART
 	// selects a random number between min and max (inclusive)
 	function random_number(min, max)
@@ -500,6 +491,14 @@ div
 			elements[index].innerHTML="<br><br>";
 		}
 	}
+	
+	// FORCING SCROLL TO TOP ON RELOAD
+	window.onbeforeunload = function()
+	{
+	  window.scrollTo(0, 0);
+	}
+	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	document.body.scrollTop = 0; // For Safari
 	
 </script>
 </body>
