@@ -269,9 +269,9 @@ div
 	// sets merch image to a random new merch image
 	var us_shirt_number = 1;
 	var uk_shirt_number = 1;
-	function select_merch_image(directory, element_id)
+	function select_merch_image(directory, element_id, max_number)
 	{
-		var img_number=random_number(1, 40);
+		var img_number=random_number(1, max_number);
 		var img_file="merch_photos/" + directory + "/" + img_number + ".jpg";
 		document.getElementById(element_id).src=img_file;
 		
@@ -301,60 +301,59 @@ div
 	}
 
 	// chooses a random merch image until it exists
-	function setup_merch_image(directory, element_id)
+	function setup_merch_image(directory, element_id, max_number)
 	{
 		document.getElementById(element_id).onerror=function()
 		{
 			// image did not load
-			select_merch_image(directory, element_id);
+			select_merch_image(directory, element_id, max_number);
 		}
-		select_merch_image(directory, element_id);
+		select_merch_image(directory, element_id, max_number);
 		
 		// sets up switching merch images
  		var time_between_img_switches=random_number(4000, 7000); // in miliseconds
-// 		var time_between_img_switches=random_number(3000, 4000); // in miliseconds
 		var timer=setInterval(function()
 		{
-			select_merch_image(directory, element_id);
+			select_merch_image(directory, element_id, max_number);
 		}, time_between_img_switches);
 	}
-	setup_merch_image("die_cut_stickers", "die_cut_sticker");
-	setup_merch_image("rectangular_stickers", "rectangular_sticker");
-	setup_merch_image("transparent_stickers", "transparent_sticker");
-	setup_merch_image("amazon_shirts", "amazon_shirts_us");
-	setup_merch_image("amazon_shirts", "amazon_shirts_uk");
+	setup_merch_image("die_cut_stickers", "die_cut_sticker", 38);
+	setup_merch_image("rectangular_stickers", "rectangular_sticker", 8);
+	setup_merch_image("transparent_stickers", "transparent_sticker", 33);
+	setup_merch_image("amazon_shirts", "amazon_shirts_us", 8);
+	setup_merch_image("amazon_shirts", "amazon_shirts_uk", 8);
 	
 	
 	// SELECTING RANDOM TITLE AND STARS
-	function select_image(directory, element_id)
+	function select_image(directory, element_id, max_number)
 	{
 		var number=random_number(1, 10);
 		var file=directory + "/" + number + ".png";
 		document.getElementById(element_id).src=file;
 	}
-	function setup_image(directory, element_id)
+	function setup_image(directory, element_id, max_number)
 	{
 		// chooses a random header image until it exists
 		document.getElementById(element_id).onerror=function()
 		{
 			// image did not load
-			select_image(directory, element_id);
+			select_image(directory, element_id, max_number);
 		}
-		select_image(directory, element_id);
+		select_image(directory, element_id, max_number);
 		
 		// sets up switching images
  		var time_between_img_switches=random_number(18000, 22000); // in miliseconds
  		var timer=setInterval(function()
 		{
-			select_image(directory, element_id);
+			select_image(directory, element_id, max_number);
 		}, time_between_img_switches);
  		
 	}
-	setup_image("header", "header");
-	setup_image("stars/2", "stars_2");
-	setup_image("stars/3", "stars_3");
-	setup_image("stars/5_top", "stars_5_top");
-	setup_image("stars/5_bottom", "stars_5_bottom");
+	setup_image("header", "header", 6);
+	setup_image("stars/2", "stars_2", 10);
+	setup_image("stars/3", "stars_3", 10);
+	setup_image("stars/5_top", "stars_5_top", 10);
+	setup_image("stars/5_bottom", "stars_5_bottom", 10);
 	
 	
 	// WIGGLE STARS
