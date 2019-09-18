@@ -204,15 +204,28 @@ div
 <script type="text/javascript" src="captions.js"></script>
 <script type="text/javascript">
 	// PRELOADS SOME IMAGES
-	function preload_image(file_path)
-	{
-		var image_storage=new Image();
-		image_storage.src=file_path;
-	}
-	for(var header_count=1; header_count<=6; header_count++)
-	{
-		preload_image("header/"+header_count+".png");
-	}
+// 	function preload_image(file_path)
+// 	{
+// 		var image_storage=new Image();
+// 		image_storage.src=file_path;
+// 	}
+// 	for(var header_count=1; header_count<=6; header_count++)
+// 	{
+// 		preload_image("header/"+header_count+".png");
+// 	}
+
+	var image_storage1=new Image();
+	image_storage1.src="header/1.png";
+	var image_storage2=new Image();
+	image_storage2.src="header/2.png";
+	var image_storage3=new Image();
+	image_storage3.src="header/3.png";
+	var image_storage4=new Image();
+	image_storage4.src="header/4.png";
+	var image_storage5=new Image();
+	image_storage5.src="header/5.png";
+	var image_storage6=new Image();
+	image_storage6.src="header/6.png";
 	
 	
 	// SELECTING A RANDOM ART
