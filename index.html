@@ -50,7 +50,16 @@ div
 .merch-block:hover
 {
 	outline-style: dotted;
-	outline-width: initial;
+	outline-width: medium;
+	outline-color: black;
+}
+.touchscreen-merch-block
+{
+	color: #000000;
+	text-decoration: none;
+	display: inline-block;
+	outline-style: dotted;
+	outline-width: medium;
 	outline-color: black;
 }
 .padded
@@ -438,13 +447,21 @@ div
 	var is_touch_device = ('ontouchstart' in document.documentElement);
 	if(is_touch_device)
 	{
+		// makes social links colorful
 		var elements=document.getElementsByName("social");
 		for(var index=0; index < elements.length; index++)
 		{
 			elements[index].setAttribute("class", "padded-color");
 		}
+		
+		// adds outline to merch links
+		var elements=document.getElementsByClassName("merch-block");
+		for(var index=0; index < elements.length; index++)
+		{
+			elements[index].setAttribute("class", "touchscreen-merch-block");
+		}
 	}
-
+	
 </script>
 </body>
 </html>
