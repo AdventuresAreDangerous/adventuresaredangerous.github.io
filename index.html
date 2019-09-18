@@ -59,7 +59,7 @@ div
 	text-decoration: none;
 	display: inline-block;
 	outline-style: dotted;
-	outline-width: medium;
+	outline-width: thick;
 	outline-color: black;
 }
 .padded
@@ -142,7 +142,7 @@ div
 <font color="#FFFFFF">
 <div class="slowappear" align="center">
 <h2>✨ <u>s h o p</u> ✨</h2>
-<div class="merch-block" align="center">
+<div class="merch-block" name="merch-block" align="center">
 	<font color="#FFFFFF">
 	<a href="https://bit.ly/nightlydiecut" class="merch-title">
 		<p>
@@ -152,7 +152,7 @@ div
 	</a>
 	</font>
 </div>
-<div class="merch-block" align="center">
+<div class="merch-block" name="merch-block" align="center">
 	<font color="#FFFFFF">
 	<a href="https://bit.ly/nightlyrectangular" class="merch-title">
 		<p>
@@ -162,7 +162,7 @@ div
 	</a>
 	</font>
 </div>
-<div class="merch-block" align="center">
+<div class="merch-block" name="merch-block" align="center">
 	<font color="#FFFFFF">
 	<a href="https://bit.ly/nightlytransparent" class="merch-title">
 		<p>
@@ -175,7 +175,7 @@ div
 </div>
 </font>
 
-<div class="slowappear" align="center">
+<div class="slowappear" name="merch-block" align="center">
 <div class="merch-block" align="center">
 	<font color="#FFFFFF">
 	<a href="https://bit.ly/nightlyUSshop" class="merch-title">
@@ -186,7 +186,7 @@ div
 	</a>
 	</font>
 </div>
-<div class="merch-block" align="center">
+<div class="merch-block" name="merch-block" align="center">
 	<font color="#FFFFFF">
 	<a href="https://bit.ly/nightlyUKshop" class="merch-title">
 		<p>
@@ -455,7 +455,7 @@ div
 		}
 		
 		// adds outline to merch links
-		var elements=document.getElementsByClassName("merch-block");
+		var elements=document.getElementsByName("merch-block");
 		for(var index=0; index < elements.length; index++)
 		{
 			elements[index].setAttribute("class", "touchscreen-merch-block");
