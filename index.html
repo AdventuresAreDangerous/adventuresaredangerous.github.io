@@ -493,10 +493,7 @@ div
 	}
 	
 	// FORCING SCROLL TO TOP ON RELOAD
-	window.onbeforeunload = function()
-	{
-	  window.scrollTo(0, 0);
-	}
+	window.scrollTo(0, 0);
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 	document.body.scrollTop = 0; // For Safari
 	
