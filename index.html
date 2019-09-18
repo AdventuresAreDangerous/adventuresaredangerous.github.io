@@ -104,11 +104,8 @@ div
 <div class="slowappear">
 <table align="center"><tr><td>
 <p align="center">
-	<img src="arts/0211.jpg" id="art" width="500">
-	<br><span id = "art_caption">
-	April 30th, 2019, 22:19, clear night sky.
-	<br>RA/Dec (J2000.0): 23h51m33.49s/-6&#176;28'16.4".
-	</span></p>
+	<img src="empty.jpg" id="art" width="500">
+	<br><span id = "art_caption"></span></p>
 </td></tr></table>
 </div>
 
@@ -124,68 +121,82 @@ div
 	<img src="social_icons/tumblr.ico" width="25" class="padded-greyscale" name="social"></a>
 <a href="https://www.facebook.com/nightlyfieldlog">
 	<img src="social_icons/facebook.ico" width="25" class="padded-greyscale" name="social"></a>
-<br><a onclick="select_image('stars/3', 'stars_3');"><img src="stars/3/1.png" id="stars_3" width="233" height="29"></a>
+<br><a onclick="select_image('stars/3', 'stars_3');"><img src="empty.jpg" id="stars_3" width="233" height="29"></a>
 </p>
 </div>
 
 <p>&nbsp;</p>
 
+<font color="#FFFFFF">
 <div class="slowappear" align="center">
 <h2>✨ <u>s h o p</u> ✨</h2>
 <div class="merch-block" align="center">
+	<font color="#FFFFFF">
 	<a href="https://bit.ly/nightlydiecut" class="merch-title">
 		<p>
-		<img src="merch_photos/die_cut_stickers/2.jpg" width="350" height="263" class="padded-all-sides" id="die_cut_sticker">
+		<img src="empty.jpg" width="350" height="263" class="padded-all-sides" id="die_cut_sticker">
 		<br>die-cut stickers
 		</p>
 	</a>
+	</font>
 </div>
 <div class="merch-block" align="center">
+	<font color="#FFFFFF">
 	<a href="https://bit.ly/nightlyrectangular" class="merch-title">
 		<p>
-		<img src="merch_photos/rectangular_stickers/1.jpg" width="350" height="263" class="padded-all-sides" id="rectangular_sticker">
+		<img src="empty.jpg" width="350" height="263" class="padded-all-sides" id="rectangular_sticker">
 		<br>rectangular stickers
 		</p>
 	</a>
+	</font>
 </div>
 <div class="merch-block" align="center">
+	<font color="#FFFFFF">
 	<a href="https://bit.ly/nightlytransparent" class="merch-title">
 		<p>
-		<img src="merch_photos/transparent_stickers/1.jpg" width="350" height="263" class="padded-all-sides" id="transparent_sticker">
+		<img src="empty.jpg" width="350" height="263" class="padded-all-sides" id="transparent_sticker">
 		<br>transparent stickers
 		</p>
 	</a>
+	</font>
 </div>
 </div>
+</font>
 
 <div class="slowappear" align="center">
 <div class="merch-block" align="center">
+	<font color="#FFFFFF">
 	<a href="https://bit.ly/nightlyUSshop" class="merch-title">
 		<p>
-		<img src="merch_photos/amazon_shirts/4.jpg" width="350" height="263" class="padded-all-sides" id="amazon_shirts_us">
+		<img src="empty.jpg" width="350" height="263" class="padded-all-sides" id="amazon_shirts_us">
 		<br>t-shirts (US shop)
 		</p>
 	</a>
+	</font>
 </div>
 <div class="merch-block" align="center">
+	<font color="#FFFFFF">
 	<a href="https://bit.ly/nightlyUKshop" class="merch-title">
 		<p>
-		<img src="merch_photos/amazon_shirts/6.jpg" width="350" height="263" class="padded-all-sides" id="amazon_shirts_uk">
+		<img src="empty.jpg" width="350" height="263" class="padded-all-sides" id="amazon_shirts_uk">
 		<br>t-shirts (UK shop)
 		</p>
 	</a>
+	</font>
 </div>
 </div>
 
 <p>&nbsp;</p>
 
+<font color="#FFFFFF">
 <div class="slowappear">
 <p align="center">
-<a onclick="select_image('stars/5_top', 'stars_5_top'); select_image('stars/5_bottom', 'stars_5_bottom');"><img src="stars/5_top/1.png" id="stars_5_top" width="173" height="25"></a>
+<a onclick="select_image('stars/5_top', 'stars_5_top'); select_image('stars/5_bottom', 'stars_5_bottom');"><img src="empty.jpg" id="stars_5_top" width="173" height="25"></a>
 <br><a onclick="select_image('stars/5_top', 'stars_5_top'); select_image('stars/5_bottom', 'stars_5_bottom');">We can only observe.</a>
-<br><a onclick="select_image('stars/5_top', 'stars_5_top'); select_image('stars/5_bottom', 'stars_5_bottom');"><img src="stars/5_bottom/1.png" id="stars_5_bottom" width="173" height="34"></a>
+<br><a onclick="select_image('stars/5_top', 'stars_5_top'); select_image('stars/5_bottom', 'stars_5_bottom');"><img src="empty.jpg" id="stars_5_bottom" width="173" height="34"></a>
 </p>
 </div>
+</font>
 
 <script type="text/javascript" src="captions.js"></script>
 <script type="text/javascript">
@@ -241,14 +252,14 @@ div
 	for(var index=0; index < elements.length; index++)
 	{
 		appear(elements[index], index);
-// 		set_text_color(elements[index], "#000000");
+		set_text_color(elements[index], "#000000");
 	}
 	
-// 	var elements=document.getElementsByClassName('merch-title');
-// 	for(var index=0; index < elements.length; index++)
-// 	{
-//  		set_text_color(elements[index], "#000000");
-// 	}
+	var elements=document.getElementsByClassName('merch-title');
+	for(var index=0; index < elements.length; index++)
+	{
+ 		set_text_color(elements[index], "#000000");
+	}
 	
 	
 	// SELECTING RANDOM MERCH IMAGES
