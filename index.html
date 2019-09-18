@@ -25,27 +25,23 @@
 	*/
 	var track_outbound_link = function(url)
 	{
-		gtag('send', 'event', 'outbound', 'click', url,
-		{
-			'transport': 'beacon',
-			'hitCallback': function(){document.location = url;}
-		});
+		gtag('event', 'click', {'event_label': url, 'event_category': 'outbound'});
 	}
 	var track_social_event = function(label)
 	{
-		gtag('send', 'event', 'social', 'click', label);
+		gtag('event', 'click', {'event_label': label, 'event_category': 'social'});
 	}
 	var track_merch_event = function(label)
 	{
-		gtag('send', 'event', 'merch', 'click', label);
+		gtag('event', 'click', {'event_label': label, 'event_category': 'merch'});
 	}
 	var track_pineapple_event = function(label)
 	{
-		gtag('send', 'event', 'pineapple', 'click', label);
+		gtag('event', 'click', {'event_label': label, 'event_category': 'pineapple'});
 	}
 	var track_other_event = function(label)
 	{
-		gtag('send', 'event', 'other', 'click', label);
+		gtag('event', 'click', {'event_label': label, 'event_category': 'other'});
 	}
 </script>
 
