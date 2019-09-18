@@ -100,8 +100,8 @@ div
 <body>
 <div>
 <p align="center">
-<a onclick="select_image('header', 'header'); select_image('stars/2', 'stars_2');"><img src="stars/2/1.png" id="stars_2" width="58" height="28"></a>
-<br><a onclick="select_image('header', 'header'); select_image('stars/2', 'stars_2');"><img src="header/4.png" id="header" width="170" height="34"></a></p>
+<a onclick="select_image('header', 'header', 6); select_image('stars/2', 'stars_2', 10);"><img src="stars/2/1.png" id="stars_2" width="58" height="28"></a>
+<br><a onclick="select_image('header', 'header', 6); select_image('stars/2', 'stars_2', 10);"><img src="header/4.png" id="header" width="170" height="34"></a></p>
 </div>
 
 <div class="slowappear">
@@ -124,7 +124,7 @@ div
 	<img src="social_icons/tumblr.ico" width="25" class="padded-greyscale" name="social"></a>
 <a href="https://www.facebook.com/nightlyfieldlog">
 	<img src="social_icons/facebook.ico" width="25" class="padded-greyscale" name="social"></a>
-<br><a onclick="select_image('stars/3', 'stars_3');"><img src="empty.jpg" id="stars_3" width="233" height="29"></a>
+<br><a onclick="select_image('stars/3', 'stars_3', 10);"><img src="empty.jpg" id="stars_3" width="233" height="29"></a>
 </p>
 </div>
 
@@ -195,8 +195,8 @@ div
 <div class="slowappear">
 <p align="center">
 <a onclick="select_image('stars/5_top', 'stars_5_top'); select_image('stars/5_bottom', 'stars_5_bottom');"><img src="empty.jpg" id="stars_5_top" width="173" height="25"></a>
-<br><a onclick="select_image('stars/5_top', 'stars_5_top'); select_image('stars/5_bottom', 'stars_5_bottom');">We can only observe.</a>
-<br><a onclick="select_image('stars/5_top', 'stars_5_top'); select_image('stars/5_bottom', 'stars_5_bottom');"><img src="empty.jpg" id="stars_5_bottom" width="173" height="34"></a>
+<br><a onclick="select_image('stars/5_top', 'stars_5_top', 10); select_image('stars/5_bottom', 'stars_5_bottom', 10);">We can only observe.</a>
+<br><a onclick="select_image('stars/5_top', 'stars_5_top', 10); select_image('stars/5_bottom', 'stars_5_bottom', 10);"><img src="empty.jpg" id="stars_5_bottom" width="173" height="34"></a>
 </p>
 </div>
 </font>
@@ -214,18 +214,18 @@ div
 // 		preload_image("header/"+header_count+".png");
 // 	}
 
-	var image_storage1=new Image();
-	image_storage1.src="header/1.png";
-	var image_storage2=new Image();
-	image_storage2.src="header/2.png";
-	var image_storage3=new Image();
-	image_storage3.src="header/3.png";
-	var image_storage4=new Image();
-	image_storage4.src="header/4.png";
-	var image_storage5=new Image();
-	image_storage5.src="header/5.png";
-	var image_storage6=new Image();
-	image_storage6.src="header/6.png";
+// 	var image_storage1=new Image();
+// 	image_storage1.src="header/1.png";
+// 	var image_storage2=new Image();
+// 	image_storage2.src="header/2.png";
+// 	var image_storage3=new Image();
+// 	image_storage3.src="header/3.png";
+// 	var image_storage4=new Image();
+// 	image_storage4.src="header/4.png";
+// 	var image_storage5=new Image();
+// 	image_storage5.src="header/5.png";
+// 	var image_storage6=new Image();
+// 	image_storage6.src="header/6.png";
 	
 	
 	// SELECTING A RANDOM ART
@@ -406,7 +406,7 @@ div
 	// SELECTING RANDOM TITLE AND STARS
 	function select_image(directory, element_id, max_number)
 	{
-		var number=random_number(1, 10);
+		var number=random_number(1, max_number);
 		var file=directory + "/" + number + ".png";
 		document.getElementById(element_id).src=file;
 	}
