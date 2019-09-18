@@ -203,6 +203,18 @@ div
 
 <script type="text/javascript" src="captions.js"></script>
 <script type="text/javascript">
+	// PRELOADS SOME IMAGES
+	function preload_image(file_path)
+	{
+		var image_storage=new Image();
+		image_storage.src=file_path;
+	}
+	for(var header_count=1; header_count<=6; header_count++)
+	{
+		preload_image("header/"+header_count+".png");
+	}
+	
+	
 	// SELECTING A RANDOM ART
 	// selects a random number between min and max (inclusive)
 	function random_number(min, max)
@@ -283,7 +295,7 @@ div
 		var opacity_increment=Math.sign(direction) * 3;
 		var time_between_increments=50; // in miliseconds
 		var time_per_element=time_between_increments * (max_opacity - min_opacity) / opacity_increment;// in miliseconds
-		var delay=time_per_element * element_number * 0.65;
+		var delay=time_per_element * (element_number+0.75) * 0.65;
 
 		var opacity=direction < 1? max_opacity:min_opacity;
 		set_opacity(element, opacity);
