@@ -31,7 +31,7 @@
 	var track_merch_click = function(merch_type, merch_image)
 	{
 		var image_name = filename_regex.exec(merch_image)[1];
-		gtag('event', 'click', {'event_label': image_name, 'event_category': 'merch-'+merch_type});
+		gtag('event', 'click', {'event_label': merch_type+"-"+image_name, 'event_category': 'merch-'+merch_type});
 	}
 	var track_pineapple_click = function(label)
 	{
@@ -46,7 +46,7 @@
 	var track_merch_mouseover = function(merch_type, merch_image)
 	{
 		var image_name = filename_regex.exec(merch_image)[1];
-		gtag('event', 'mouseover', {'event_label': image_name, 'event_category': 'merch-'+merch_type});
+		gtag('event', 'mouseover', {'event_label': merch_type+"-"+image_name, 'event_category': 'merch-'+merch_type});
 	}
 </script>
 
