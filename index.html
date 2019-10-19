@@ -208,6 +208,17 @@ div
 	</a>
 	</font>
 </div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('amazon_shirts_de', document.getElementById('amazon_shirts_de').src);" onmouseover="track_merch_mouseover('amazon_shirts_de');">
+	<font color="#FFFFFF">
+	<a href="https://bit.ly/nightlydeshop" class="merch-title">
+		<p>
+		<img src="empty.jpg" width="350" height="263" class="padded-all-sides" id="amazon_shirts_de">
+		<br>T-Shirts (Deutschland Österreich Shop)
+		</p>
+	</a>
+	</font>
+</div>
 </div>
 </font>
 
@@ -380,6 +391,7 @@ div
 	// sets merch image to a random new merch image
 	var us_shirt_number = 1;
 	var uk_shirt_number = 1;
+	var de_shirt_number = 1;
 	function select_merch_image(directory, element_id, max_number)
 	{
 		var img_number=random_number(1, max_number);
@@ -389,7 +401,7 @@ div
 		// ensures that the two shirt photos are not the same
 		if(element_id == "amazon_shirts_us")
 		{
-			if(img_number == uk_shirt_number)
+			if(img_number == uk_shirt_number || img_number == de_shirt_number)
 			{
 				select_merch_image(directory, element_id)
 			}
@@ -400,13 +412,24 @@ div
 		}
 		if(element_id == "amazon_shirts_uk")
 		{
-			if(img_number == us_shirt_number)
+			if(img_number == us_shirt_number || img_number == de_shirt_number)
 			{
 				select_merch_image(directory, element_id)
 			}
 			else
 			{
 				uk_shirt_number = img_number;
+			}
+		}
+		if(element_id == "amazon_shirts_de")
+		{
+			if(img_number == us_shirt_number || img_number == uk_shirt_number)
+			{
+				select_merch_image(directory, element_id)
+			}
+			else
+			{
+				de_shirt_number = img_number;
 			}
 		}
 	}
@@ -433,6 +456,7 @@ div
 	setup_merch_image("transparent_stickers", "transparent_sticker", 33);
 	setup_merch_image("amazon_shirts", "amazon_shirts_us", 8);
 	setup_merch_image("amazon_shirts", "amazon_shirts_uk", 8);
+	setup_merch_image("amazon_shirts", "amazon_shirts_de", 8);
 	
 	
 	// SELECTING RANDOM TITLE AND STARS
