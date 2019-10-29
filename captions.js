@@ -359,7 +359,8 @@ var captions =
 	357: "October 24th, 2019, 22:47, clear, starry sky.BRRA/Dec (J2000.0): 21h16m26.34s/+68#176;15'36.7\".",
 	358: "October 25th, 2019, 29:05, light fog.BRRA/Dec (J2000.0): 12h39m08.70s/+0#176;53'48.8\".",
 	359: "October 26th, 2019, 24:17, heavy fog and a relentless blinding white light.BRRA/Dec (J2000.0): 5h35m04.80s/-4#176;43'54.7\".",
-	360: "October 27th, 2019, 17:35, pouring rain.BRRA/Dec (J2000.0): 13h56m55.83s/-7#176;51'23.6\"."
+	360: "October 27th, 2019, 17:35, pouring rain.BRRA/Dec (J2000.0): 13h56m55.83s/-7#176;51'23.6\".",
+	361: "October 28th, 2019, 19:45, 56% cloud cover.BRRA/Dec (J2000.0): 17h27m53.77s/-23#176;01'42.5\"."
 };
 
 var included =
@@ -549,5 +550,6 @@ var included =
 	355: true,
 	356: true,
 	359: true,
-	360: true
+	360: true,
+	361: true
 };
