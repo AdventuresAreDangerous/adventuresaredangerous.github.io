@@ -302,10 +302,10 @@ div
 	var art_number;
 	function select_art_image()
 	{
-		art_number=random_number(1, 395);
+		art_number=random_number(1, 432);
 		while(!included[art_number])
 		{
-			art_number=random_number(1, 395);
+			art_number=random_number(1, 432);
 		}
 		var art_file="arts/" + pad_number(art_number) + ".jpg";
 		document.getElementById("art").src=art_file;
