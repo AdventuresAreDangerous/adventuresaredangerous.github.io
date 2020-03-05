@@ -246,12 +246,25 @@ div
 	</font>
 </div>
 <span name = "verticalspace"></span>
-<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('transparent_sticker', document.getElementById('transparent_sticker').src);" onmouseover="track_merch_mouseover('transparent_sticker', document.getElementById('transparent_sticker').src);">
+<div class="merch-block" name="merch-block" align="center">
 	<font color="#FFFFFF">
-	<a href="https://rdbl.co/2MS2EGy" class="merch-title">
+	<a href="https://rdbl.co/2MS2EGy" class="merch-title" onclick="track_merch_click('transparent_sticker', document.getElementById('transparent_sticker').src);" onmouseover="track_merch_mouseover('transparent_sticker', document.getElementById('transparent_sticker').src);">
 		<p>
 		<img src="empty.jpg" width="350" height="263" class="padded-all-sides" id="transparent_sticker">
 		<br>transparent stickers
+		</p>
+	</a>
+	</font>
+</div>
+</div>
+<span name = "verticalspace"></span>
+<div class="slowappear" align="center">
+<div class="merch-block" name="merch-block" align="center">
+	<font color="#FFFFFF">
+	<a href="https://rdbl.co/2Ts5fvk" class="merch-title" onclick="track_merch_click('other_things', document.getElementById('other_things').src);" onmouseover="track_merch_mouseover('other_things', document.getElementById('other_things').src);">
+		<p>
+		<img src="empty.jpg" width="350" height="263" class="padded-all-sides" id="other_things">
+		<br>notebooks, mugs, and other things
 		</p>
 	</a>
 	</font>
@@ -457,6 +470,7 @@ div
 	setup_merch_image("amazon_shirts", "amazon_shirts_us", 18);
 	setup_merch_image("amazon_shirts", "amazon_shirts_uk", 18);
 	setup_merch_image("amazon_shirts", "amazon_shirts_de", 18);
+	setup_merch_image("other_things", "other_things", 15);
 	
 	
 	// SELECTING RANDOM TITLE AND STARS
