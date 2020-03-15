@@ -431,7 +431,25 @@ var captions =
 	429: "February 26th, 2020, 21:42, heavy fog.BRRA/Dec (J2000.0): 15h15m53.69s/+56#176;19'43.9\".",
 	430: "February 27th, 2020, 20:43, 46% cloud cover.BRRA/Dec (J2000.0): 15h15m53.69s/+56#176;19'43.9\".",
 	431: "February 28th, 2020, 21:32, 92% cloud cover.BRRA/Dec (J2000.0): 15h15m53.69s/+56#176;19'43.9\".",
-	432: "February 29th, 2020, 21:32, 99% cloud cover.BRRA/Dec (J2000.0): 15h15m53.69s/+56#176;19'43.9\"."
+	432: "February 29th, 2020, 21:32, 99% cloud cover.BRRA/Dec (J2000.0): 15h15m53.69s/+56#176;19'43.9\".",
+	433: "March 1st, 2020, 11:41, 99% cloud cover.BRRA/Dec (J2000.0): 18h41m34.66s/-23#176;31'00.7\".",
+	434: "March 2nd, 2020, 27:26, 29% cloud cover.BRRA/Dec (J2000.0): 18h46m34.27s/-23#176;27'24.7\".",
+	435: "March 3rd, 2020, 28:10, 62% cloud cover.BRRA/Dec (J2000.0): 18h49m40.29s/-23#176;24'53.5\".",
+	436: "March 4th, 2020, 22:21, heavy hail.BRRA/Dec (J2000.0): 6h19m58.21s/-10#176;38'15.2\".",
+	437: "March 5th, 2020, 21:02, heavy snow.BRRA/Dec (J2000.0): 6h19m58.21s/-10#176;38'15.2\".",
+	438: "March 6th, 2020, 27:16, 56% cloud cover.BRRA/Dec (J2000.0): 18h58m34.79s/-23#176;16'24.9\".",
+	439: "March 7th, 2020, 24:14, 56% cloud cover.BRRA/Dec (J2000.0): 20h56m24.97s/+45#176;28'12.0\".",
+	440: "March 8th, 2020, 28:11, 48% cloud cover.BRRA/Dec (J2000.0): 19h04m34.61s/-23#176;09'41.7\".",
+	441: "March 9th, 2020, 28:47, 52% cloud cover.BRRA/Dec (J2000.0): 19h07m39.17s/-23#176;05'56.1\".",
+	442: "March 10th, 2020, 29:15, light fog.BRRA/Dec (J2000.0): 19h10m42.63s/-23#176;01'59.0\".",
+	443: "March 11th, 2020, 28:29, 77% cloud cover.BRRA/Dec (J2000.0): 19h31m43.56s/-21#176;47'07.3\".",
+	444: "March 12th, 2020, 22:54, bleak cicadas.BRRA/Dec (J2000.0): 5h27m28.21s/-12#176;41'50.3\".",
+	445: "March 13th, 2020, 29:16, light hail.BRRA/Dec (J2000.0): 20h05m02.06s/-20#176;22'18.8\".",
+	446: "March 14th, 2020, 21:21, bright sun.BRRA/Dec (J2000.0): 12h45m08.68s/-0#176;27'42.9\".",
+	447: "March 15th, 2020, 22:43, heavy snow.BRRA/Dec (J2000.0): 12h45m08.68s/-0#176;27'42.9\".",
+	448: "March 16th, 2020, 22:29, heavy, unsettling drizzle.BRRA/Dec (J2000.0): 12h45m08.68s/-0#176;27'42.9\".",
+	449: "March 17th, 2020, 20:43, heavy, car-sized hail.BRRA/Dec (J2000.0): 12h45m08.68s/-0#176;27'42.9\".",
+	450: "March 18th, 2020, 20:31, 100% cloud cover.BRRA/Dec (J2000.0): 12h45m08.68s/-0#176;27'42.9\"."
 };
 
 var included =
@@ -693,5 +711,23 @@ var included =
 	429: true,
 	430: true,
 	431: true,
-	432: true
+	432: true,
+	433: true,
+	434: true,
+	435: true,
+	436: true,
+	437: true,
+	438: true,
+	439: true,
+	440: true,
+	441: true,
+	442: true,
+	443: true,
+	444: true,
+	445: true,
+	446: true,
+	447: true,
+	448: true,
+	449: true,
+	450: true
 };
