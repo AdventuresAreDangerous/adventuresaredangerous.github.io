@@ -428,13 +428,15 @@ div
 	var us_shirt_number = 1;
 	var uk_shirt_number = 1;
 	var de_shirt_number = 1;
+	var us_popsocket_number = 1;
+	var de_popsocket_number = 1;
 	function select_merch_image(directory, element_id, max_number)
 	{
 		var img_number=random_number(1, max_number);
 		var img_file="merch_photos/" + directory + "/" + img_number + ".jpg";
 		document.getElementById(element_id).src=img_file;
 		
-		// ensures that the two shirt photos are not the same
+		// ensures that the three shirt photos are not the same
 		if(element_id == "amazon_shirts_us")
 		{
 			if(img_number == uk_shirt_number || img_number == de_shirt_number)
@@ -466,6 +468,30 @@ div
 			else
 			{
 				de_shirt_number = img_number;
+			}
+		}
+		
+		// ensures that the two popsocket photos are not the same
+		if(element_id == "popsockets_us")
+		{
+			if(img_number == de_popsocket_number)
+			{
+				select_merch_image(directory, element_id)
+			}
+			else
+			{
+				us_popsocket_number = img_number;
+			}
+		}
+		if(element_id == "popsockets_de")
+		{
+			if(img_number == us_popsocket_number)
+			{
+				select_merch_image(directory, element_id)
+			}
+			else
+			{
+				de_popsocket_number = img_number;
 			}
 		}
 	}
