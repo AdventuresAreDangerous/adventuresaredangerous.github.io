@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="description" content="Adventures Are Dangerous. Nightly field log of observations of the sky. Shirts and stickers for sale. Click. Click click click." />
+<meta name="keywords" content="adventures are dangerous, adventuresaredangerous, nightlyfieldlog, nightly field log, whimsical, cozy, adventure, art, shirts, stickers, cows, space, stars, cow art, space art, shirt, t-shirt, sticker, merch, store, shop" />
+
+<link rel="stylesheet" href="https://use.typekit.net/rss3vje.css">
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148227027-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-148227027-1');
+	
+	var filename_regex = /([^\/]*[.]\w\w\w)/g;
+
+	// tracks clicks
+	var track_outbound_link_click = function(url)
+	{
+		gtag('event', 'click', {'event_label': url, 'event_category': 'outbound'});
+	}
+	var track_social_click = function(label)
+	{
+		gtag('event', 'click', {'event_label': label, 'event_category': 'social'});
+	}
+	var track_merch_click = function(merch_type, merch_image)
+	{
+		var image_name = filename_regex.exec(merch_image)[1];
+		gtag('event', 'click', {'event_label': merch_type+"-"+image_name, 'event_category': 'merch-us-'+merch_type});
+	}
+	var track_pineapple_click = function(label)
+	{
+		gtag('event', 'click', {'event_label': label, 'event_category': 'pineapple'});
+	}
+	
+	// tracks mouseovers
+	var track_social_mouseover = function(label)
+	{
+		gtag('event', 'mouseover', {'event_label': label, 'event_category': 'social'});
+	}
+	var track_merch_mouseover = function(merch_type, merch_image)
+	{
+		var image_name = filename_regex.exec(merch_image)[1];
+		gtag('event', 'mouseover', {'event_label': merch_type+"-"+image_name, 'event_category': 'merch-us-'+merch_type});
+	}
+</script>
+
+<style type="text/css">
+p
+{
+	font-family: calluna,garamond,serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: medium;
+}
+h1
+{
+	font-family: calluna,garamond,serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: extra-large;
+}
+h2
+{
+	font-family: calluna,garamond,serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 150%;
+}
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+div
+{
+/* 	border: 1px solid #CCC; */
+}
+.merch-title
+{
+	color: #000000;
+	text-decoration: none;
+}
+.merch-block
+{
+	color: #000000;
+	text-decoration: none;
+	display: inline-block;
+}
+.merch-block:hover
+{
+	outline-style: dotted;
+	outline-width: 4px;
+	outline-color: black;
+}
+.touchscreen-merch-block
+{
+	color: #000000;
+	text-decoration: none;
+	display: inline-block;
+	outline-style: dotted;
+	outline-width: 4px;
+	outline-color: black;
+}
+.padded
+{
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+.padded-all-sides
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.padded-greyscale
+{
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	-webkit-filter: grayscale(100%); // Safari 6.0-9.0
+	filter: grayscale(100%);
+}
+.padded-greyscale:hover
+{
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+.padded-color
+{
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	-webkit-filter: grayscale(0%); // Safari 6.0-9.0
+	filter: grayscale(0%);
+}
+</style>
+
+<title>
+	Adventures Are Dangerous
+</title>
+</head>
+
+<body>
+<div>
+<p align="center">
+<a href="./index.html"><img src="stars/2/1.png" id="stars_2" width="58" height="28"></a>
+<br><a href="./index.html"><img src="header/4.png" id="header" width="170" height="34"></a></p>
+</div>
+
+<p>&nbsp;</p>
+
+<font color="#FFFFFF">
+<div class="slowappear" align="center">
+<h2>✨ <u>s h o p</u> ✨</h2>
+</div>
+
+<div class="slowappear" align="center">
+✨ all shirts $14 ✨
+<br>✨ free shipping, free returns ✨
+<br>✨ men, women, and youth sizes ✨
+<br>✨ color options available ✨
+</div>
+</font>
+
+<p>&nbsp;</p>
+
+<div class="slowappear" align="center">
+<a onclick="select_image('stars/3', 'stars_3', 10); track_pineapple_click('stars3');"><img src="empty.jpg" id="stars_3" width="233" height="29"></a>
+</p>
+</div>
+
+<p>&nbsp;</p>
+
+<span name = "smallverticalspace"></span>
+<div class="slowappear" align="center">
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('colorful_cows_creepy_vine_forest', document.getElementById('colorful_cows_creepy_vine_forest').src);" onmouseover="track_merch_mouseover('colorful_cows_creepy_vine_forest', document.getElementById('colorful_cows_creepy_vine_forest').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B085ZB51TT?customId=B07537H64L&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/colorful_cows_creepy_vine_forest/1.jpg" width="550" height="560" class="padded-all-sides" id="colorful_cows_creepy_vine_forest">
+		<br>Colorful Cows, Creepy Vine Forest
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('cows_moon_and_cloudy_lighthouse', document.getElementById('cows_moon_and_cloudy_lighthouse').src);" onmouseover="track_merch_mouseover('cows_moon_and_cloudy_lighthouse', document.getElementById('cows_moon_and_cloudy_lighthouse').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07ZR5XZQV?customId=B07537TZ66&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/cows_moon_and_cloudy_lighthouse/1.jpg" width="550" height="560" class="padded-all-sides" id="cows_moon_and_cloudy_lighthouse">
+		<br>Cows, Moon, and Cloudy Lighthouse
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('cows_night_city_colorful_windows', document.getElementById('cows_night_city_colorful_windows').src);" onmouseover="track_merch_mouseover('cows_night_city_colorful_windows', document.getElementById('cows_night_city_colorful_windows').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B085ZCN6FB?customId=B07537H64L&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/cows_night_city_colorful_windows/1.jpg" width="550" height="560" class="padded-all-sides" id="cows_night_city_colorful_windows">
+		<br>Cows, Night City, Colorful Windows
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('colorful_rainbow_stars_night_sky', document.getElementById('colorful_rainbow_stars_night_sky').src);" onmouseover="track_merch_mouseover('colorful_rainbow_stars_night_sky', document.getElementById('colorful_rainbow_stars_night_sky').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07SFSB6KJ" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/colorful_rainbow_stars_night_sky/1.jpg" width="550" height="560" class="padded-all-sides" id="colorful_rainbow_stars_night_sky">
+		<br>Colorful Rainbow Stars, Night Sky
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cows_on_stars_and_planets', document.getElementById('space_cows_on_stars_and_planets').src);" onmouseover="track_merch_mouseover('space_cows_on_stars_and_planets', document.getElementById('space_cows_on_stars_and_planets').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07S321K7Q?customId=B07537TZ66&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cows_on_stars_and_planets/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cows_on_stars_and_planets">
+		<br>Space Cows on Stars and Planets
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cows_on_stars_with_friends', document.getElementById('space_cows_on_stars_with_friends').src);" onmouseover="track_merch_mouseover('space_cows_on_stars_with_friends', document.getElementById('space_cows_on_stars_with_friends').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07S27V139?customId=B07537HNTD&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cows_on_stars_with_friends/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cows_on_stars_with_friends">
+		<br>Space Cows on Stars with Friends
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('little_prince_space_cow_on_planets', document.getElementById('little_prince_space_cow_on_planets').src);" onmouseover="track_merch_mouseover('little_prince_space_cow_on_planets', document.getElementById('little_prince_space_cow_on_planets').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07RT6W7Y4?customId=B0752XK16C&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/little_prince_space_cow_on_planets/1.jpg" width="550" height="560" class="padded-all-sides" id="little_prince_space_cow_on_planets">
+		<br>Little Prince Space Cow on Planets
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cows_on_pink_moon_with_stars', document.getElementById('space_cows_on_pink_moon_with_stars').src);" onmouseover="track_merch_mouseover('space_cows_on_pink_moon_with_stars', document.getElementById('space_cows_on_pink_moon_with_stars').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07RWP3TBY?customId=B07537H64L&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cows_on_pink_moon_with_stars/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cows_on_pink_moon_with_stars">
+		<br>Space Cows on Pink Moon with Stars
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cow_on_spaceship_with_stars', document.getElementById('space_cow_on_spaceship_with_stars').src);" onmouseover="track_merch_mouseover('space_cow_on_spaceship_with_stars', document.getElementById('space_cow_on_spaceship_with_stars').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07RTZ94FS" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cow_on_spaceship_with_stars/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cow_on_spaceship_with_stars">
+		<br>Space Cow on Spaceship with Stars
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cows_with_spaceship_and_stars', document.getElementById('space_cows_with_spaceship_and_stars').src);" onmouseover="track_merch_mouseover('space_cows_with_spaceship_and_stars', document.getElementById('space_cows_with_spaceship_and_stars').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07RQMQB1J?customId=B07537HNQY&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cows_with_spaceship_and_stars/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cows_with_spaceship_and_stars">
+		<br>Space Cows with Spaceship & Stars
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('flying_cows_mountains_balloon', document.getElementById('flying_cows_mountains_balloon').src);" onmouseover="track_merch_mouseover('flying_cows_mountains_balloon', document.getElementById('flying_cows_mountains_balloon').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07ZR3Q223?customId=B075386ZN1&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/flying_cows_mountains_balloon/1.jpg" width="550" height="560" class="padded-all-sides" id="flying_cows_mountains_balloon">
+		<br>Flying Cows, Mountains, Balloon
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cows_on_moon_with_stars', document.getElementById('space_cows_on_moon_with_stars').src);" onmouseover="track_merch_mouseover('space_cows_on_moon_with_stars', document.getElementById('space_cows_on_moon_with_stars').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07RWPDZQG?customId=B07537TZ66&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cows_on_moon_with_stars/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cows_on_moon_with_stars">
+		<br>Space Cows on Moon with Stars
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('cows_black_cowprint_hills_stars', document.getElementById('cows_black_cowprint_hills_stars').src);" onmouseover="track_merch_mouseover('cows_black_cowprint_hills_stars', document.getElementById('cows_black_cowprint_hills_stars').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B085ZJLX2X" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/cows_black_cowprint_hills_stars/1.jpg" width="550" height="560" class="padded-all-sides" id="cows_black_cowprint_hills_stars">
+		<br>Cows, Black Cowprint Hills, Stars
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('cows_on_purple_spaceships_stars', document.getElementById('cows_on_purple_spaceships_stars').src);" onmouseover="track_merch_mouseover('cows_on_purple_spaceships_stars', document.getElementById('cows_on_purple_spaceships_stars').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B085ZCPPT1?customId=B07537HNQY&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/cows_on_purple_spaceships_stars/1.jpg" width="550" height="560" class="padded-all-sides" id="cows_on_purple_spaceships_stars">
+		<br>Cows on Purple Spaceships, Stars
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('cows_on_spaceships_crescent_moon', document.getElementById('cows_on_spaceships_crescent_moon').src);" onmouseover="track_merch_mouseover('cows_on_spaceships_crescent_moon', document.getElementById('cows_on_spaceships_crescent_moon').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B085ZXLVTZ?customId=B07537TZ66&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/cows_on_spaceships_crescent_moon/1.jpg" width="550" height="560" class="padded-all-sides" id="cows_on_spaceships_crescent_moon">
+		<br>Cows on Spaceships, Crescent Moon
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('cows_trees_stars_looming_saturn', document.getElementById('cows_trees_stars_looming_saturn').src);" onmouseover="track_merch_mouseover('cows_trees_stars_looming_saturn', document.getElementById('cows_trees_stars_looming_saturn').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07W865MGQ?customId=B0752XK16C&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/cows_trees_stars_looming_saturn/1.jpg" width="550" height="560" class="padded-all-sides" id="cows_trees_stars_looming_saturn">
+		<br>Cows, Trees, Stars, Looming Saturn
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cows_on_cozy_night_buildings', document.getElementById('space_cows_on_cozy_night_buildings').src);" onmouseover="track_merch_mouseover('space_cows_on_cozy_night_buildings', document.getElementById('space_cows_on_cozy_night_buildings').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07W7WBBDF?customId=B07537HNQY&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cows_on_cozy_night_buildings/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cows_on_cozy_night_buildings">
+		<br>Space Cows on Cozy Night Buildings
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('cows_on_cozy_forest_cabin_at_night', document.getElementById('cows_on_cozy_forest_cabin_at_night').src);" onmouseover="track_merch_mouseover('cows_on_cozy_forest_cabin_at_night', document.getElementById('cows_on_cozy_forest_cabin_at_night').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07W4DYCXT?customId=B0753779F2&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/cows_on_cozy_forest_cabin_at_night/1.jpg" width="550" height="560" class="padded-all-sides" id="cows_on_cozy_forest_cabin_at_night">
+		<br>Cows on Cozy Forest Cabin at Night
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('cows_dark_forest_red_moon_birds', document.getElementById('cows_dark_forest_red_moon_birds').src);" onmouseover="track_merch_mouseover('cows_dark_forest_red_moon_birds', document.getElementById('cows_dark_forest_red_moon_birds').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B085ZVTHZW?customId=B07537PBB4&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/cows_dark_forest_red_moon_birds/1.jpg" width="550" height="560" class="padded-all-sides" id="cows_dark_forest_red_moon_birds">
+		<br>Cows, Dark Forest, Red Moon, Birds
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('cows_in_futuristic_city_with_blimp', document.getElementById('cows_in_futuristic_city_with_blimp').src);" onmouseover="track_merch_mouseover('cows_in_futuristic_city_with_blimp', document.getElementById('cows_in_futuristic_city_with_blimp').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B085ZHT51Q?customId=B07537TZ66&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/cows_in_futuristic_city_with_blimp/1.jpg" width="550" height="560" class="padded-all-sides" id="cows_in_futuristic_city_with_blimp">
+		<br>Cows in Futuristic City with Blimp
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('cows_clouds_over_starry_mountains', document.getElementById('cows_clouds_over_starry_mountains').src);" onmouseover="track_merch_mouseover('cows_clouds_over_starry_mountains', document.getElementById('cows_clouds_over_starry_mountains').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B084364TTY?customId=B07537HNQY&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/cows_clouds_over_starry_mountains/1.jpg" width="550" height="560" class="padded-all-sides" id="cows_clouds_over_starry_mountains">
+		<br>Cows, Clouds over Starry Mountains
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('colorful_cows_snowy_forest_stars', document.getElementById('colorful_cows_snowy_forest_stars').src);" onmouseover="track_merch_mouseover('colorful_cows_snowy_forest_stars', document.getElementById('colorful_cows_snowy_forest_stars').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B0842VPYNM?customId=B07537H64L&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/colorful_cows_snowy_forest_stars/1.jpg" width="550" height="560" class="padded-all-sides" id="colorful_cows_snowy_forest_stars">
+		<br>Colorful Cows, Snowy Forest, Stars
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_blimp_with_cows_and_circles', document.getElementById('space_blimp_with_cows_and_circles').src);" onmouseover="track_merch_mouseover('space_blimp_with_cows_and_circles', document.getElementById('space_blimp_with_cows_and_circles').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07W8KF7RB?customId=B075386ZN1&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_blimp_with_cows_and_circles/1.jpg" width="550" height="560" class="padded-all-sides" id="space_blimp_with_cows_and_circles">
+		<br>Space Blimp with Cows and Circles
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cow_fish_in_space', document.getElementById('space_cow_fish_in_space').src);" onmouseover="track_merch_mouseover('space_cow_fish_in_space', document.getElementById('space_cow_fish_in_space').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B0815ZRNJH?customId=B07537NG8H&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cow_fish_in_space/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cow_fish_in_space">
+		<br>Space Cow Fish in Space
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cows_on_night_city_buildings', document.getElementById('space_cows_on_night_city_buildings').src);" onmouseover="track_merch_mouseover('space_cows_on_night_city_buildings', document.getElementById('space_cows_on_night_city_buildings').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B0817GWFF9?customId=B0752XJX9Q&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cows_on_night_city_buildings/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cows_on_night_city_buildings">
+		<br>Space Cows on Night City Buildings
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cows_on_night_city_buildings_2', document.getElementById('space_cows_on_night_city_buildings_2').src);" onmouseover="track_merch_mouseover('space_cows_on_night_city_buildings_2', document.getElementById('space_cows_on_night_city_buildings_2').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B0817GN1D2?customId=B07537TZ66&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cows_on_night_city_buildings_2/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cows_on_night_city_buildings_2">
+		<br>Space Cows on Night City Buildings
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('cows_in_city_blood_moon_stars', document.getElementById('cows_in_city_blood_moon_stars').src);" onmouseover="track_merch_mouseover('cows_in_city_blood_moon_stars', document.getElementById('cows_in_city_blood_moon_stars').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B0817GK9T7?customId=B0753779F2&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/cows_in_city_blood_moon_stars/1.jpg" width="550" height="560" class="padded-all-sides" id="cows_in_city_blood_moon_stars">
+		<br>Cows in City, Blood Moon, Stars
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('cows_in_city_with_moon_and_stars', document.getElementById('cows_in_city_with_moon_and_stars').src);" onmouseover="track_merch_mouseover('cows_in_city_with_moon_and_stars', document.getElementById('cows_in_city_with_moon_and_stars').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07ZWSBW7V" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/cows_in_city_with_moon_and_stars/1.jpg" width="550" height="560" class="padded-all-sides" id="cows_in_city_with_moon_and_stars">
+		<br>Cows in City with Moon and Stars
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('autumnal_cows_halloween_pumpkin', document.getElementById('autumnal_cows_halloween_pumpkin').src);" onmouseover="track_merch_mouseover('autumnal_cows_halloween_pumpkin', document.getElementById('autumnal_cows_halloween_pumpkin').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07ZVL7H9Q?customId=B0753779FX&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/autumnal_cows_halloween_pumpkin/1.jpg" width="550" height="560" class="padded-all-sides" id="autumnal_cows_halloween_pumpkin">
+		<br>Autumnal Cows, Halloween Pumpkin
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cow_blue_and_purple_saturn', document.getElementById('space_cow_blue_and_purple_saturn').src);" onmouseover="track_merch_mouseover('space_cow_blue_and_purple_saturn', document.getElementById('space_cow_blue_and_purple_saturn').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07ZS6K7BD?customId=B0752XK16C&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cow_blue_and_purple_saturn/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cow_blue_and_purple_saturn">
+		<br>Space Cow, Blue and Purple Saturn
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cows_on_tree_with_stars', document.getElementById('space_cows_on_tree_with_stars').src);" onmouseover="track_merch_mouseover('space_cows_on_tree_with_stars', document.getElementById('space_cows_on_tree_with_stars').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07ZS6MYYQ?customId=B0752XJX9Q&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cows_on_tree_with_stars/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cows_on_tree_with_stars">
+		<br>Space Cows on Tree with Stars
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cows_with_stars_and_planets', document.getElementById('space_cows_with_stars_and_planets').src);" onmouseover="track_merch_mouseover('space_cows_with_stars_and_planets', document.getElementById('space_cows_with_stars_and_planets').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07ZS623SX?customId=B075382QRP&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cows_with_stars_and_planets/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cows_with_stars_and_planets">
+		<br>Space Cows with Stars and Planets
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cow_rainbow_on_cozy_rooftops', document.getElementById('space_cow_rainbow_on_cozy_rooftops').src);" onmouseover="track_merch_mouseover('space_cow_rainbow_on_cozy_rooftops', document.getElementById('space_cow_rainbow_on_cozy_rooftops').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07ZR3JMR4?customId=B07537TZ66&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cow_rainbow_on_cozy_rooftops/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cow_rainbow_on_cozy_rooftops">
+		<br>Space Cow Rainbow on Cozy Rooftops
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_cows_on_heartbeat_mountain', document.getElementById('space_cows_on_heartbeat_mountain').src);" onmouseover="track_merch_mouseover('space_cows_on_heartbeat_mountain', document.getElementById('space_cows_on_heartbeat_mountain').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07W5R32T1?customId=B07535YCL2&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_cows_on_heartbeat_mountain/1.jpg" width="550" height="560" class="padded-all-sides" id="space_cows_on_heartbeat_mountain">
+		<br>Space Cows on Heartbeat Mountain
+		</p>
+	</a>
+	</font>
+</div>
+<span name = "verticalspace"></span>
+<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('space_blimp_crescent_moon_cows', document.getElementById('space_blimp_crescent_moon_cows').src);" onmouseover="track_merch_mouseover('space_blimp_crescent_moon_cows', document.getElementById('space_blimp_crescent_moon_cows').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.amazon.com/dp/B07W6BBMT5?customId=B0752XJQPJ&th=1" class="merch-title">
+		<p>
+		<img src="shirt_preview_images/space_blimp_crescent_moon_cows/1.jpg" width="550" height="560" class="padded-all-sides" id="space_blimp_crescent_moon_cows">
+		<br>Space Blimp, Crescent Moon, Cows
+		</p>
+	</a>
+	</font>
+</div>
+</div>
+
+<p>&nbsp;</p>
+
+<font color="#FFFFFF">
+<div class="slowappear">
+<p align="center">
+<a onclick="select_image('stars/5_top', 'stars_5_top'); select_image('stars/5_bottom', 'stars_5_bottom'); track_pineapple_click('stars5_top');"><img src="empty.jpg" id="stars_5_top" width="173" height="25"></a>
+<br><a onclick="select_image('stars/5_top', 'stars_5_top', 10); select_image('stars/5_bottom', 'stars_5_bottom', 10); track_pineapple_click('we_can_only_observe');">We can only observe.</a>
+<br><a onclick="select_image('stars/5_top', 'stars_5_top', 10); select_image('stars/5_bottom', 'stars_5_bottom', 10); track_pineapple_click('stars5_bottom');"><img src="empty.jpg" id="stars_5_bottom" width="173" height="34"></a>
+</p>
+</div>
+</font>
+
+<script type="text/javascript" src="captions.js"></script>
+<script type="text/javascript">
+	
+	// GRADUALLY FADES IN CONTENT
+	// sets opacity (between 0 and 100) for parameter element
+	// based on https://stackoverflow.com/a/2207751
+	function set_opacity(element, opacity)
+	{
+		// modern browsers
+		element.style.opacity=opacity / 100;
+	
+		// older IE
+		element.style.filter='alpha(opacity=' + opacity + ')';
+	}
+	
+	function set_text_color(element, color)
+	{
+		element.style.color=color;
+	}
+
+	// makes contents of web site gradually appear, one by one
+	// based on https://stackoverflow.com/a/2207751
+	function appear_or_disappear(element, element_number, direction)
+	{
+		var max_opacity=100;
+		var min_opacity=0;
+		var opacity_increment=Math.sign(direction) * 3;
+		var time_between_increments=50; // in miliseconds
+		var time_per_element=time_between_increments * (max_opacity - min_opacity) / opacity_increment;// in miliseconds
+		var delay=time_per_element * (element_number+0.75) * 0.65;
+
+		var opacity=direction < 1? max_opacity:min_opacity;
+		set_opacity(element, opacity);
+		setTimeout(function()
+		{
+			var timer=setInterval(function()
+			{
+				opacity=opacity + opacity_increment;
+				if(opacity > max_opacity || opacity < min_opacity)
+				{
+					clearInterval(timer);
+					return; 
+				}
+				set_opacity(element, opacity);
+			}, time_between_increments);
+		}, delay);
+	}
+	
+	function appear(element, index) {appear_or_disappear(element, index, 1)}
+	function disappear(element, index) {appear_or_disappear(element, index, -1)}
+	
+	var elements=document.getElementsByClassName('slowappear');
+	for(var index=0; index < elements.length; index++)
+	{
+		appear(elements[index], index);
+		set_text_color(elements[index], "#000000");
+	}
+	
+	var elements=document.getElementsByClassName('merch-title');
+	for(var index=0; index < elements.length; index++)
+	{
+ 		set_text_color(elements[index], "#000000");
+	}
+	
+	
+	// SELECTING RANDOM MERCH IMAGES
+	// selects a random number between min and max (inclusive)
+	function random_number(min, max)
+	{
+		return parseInt((min + Math.random() * (max - min + 1)), 10);
+	}
+	
+	// sets merch image to a random new merch image
+	function select_merch_image(directory, element_id, max_number)
+	{
+		var img_number=random_number(1, max_number);
+		var img_file="shirt_preview_images/" + directory + "/" + img_number + ".jpg";
+		document.getElementById(element_id).src=img_file;
+	}
+
+	// chooses a random merch image until it exists
+	function setup_merch_image(directory, max_number)
+	{
+		var element_id=directory;
+		document.getElementById(element_id).onerror=function()
+		{
+			// image did not load
+			select_merch_image(directory, element_id, max_number);
+		}
+		select_merch_image(directory, element_id, max_number);
+		
+		// sets up switching merch images
+ 		var time_between_img_switches=random_number(4000, 7000); // in miliseconds
+		var timer=setInterval(function()
+		{
+			select_merch_image(directory, element_id, max_number);
+		}, time_between_img_switches);
+	}
+	setup_merch_image("autumnal_cows_halloween_pumpkin", 1);
+	setup_merch_image("colorful_cows_creepy_vine_forest", 1);
+	setup_merch_image("colorful_cows_snowy_forest_stars", 1);
+	setup_merch_image("colorful_rainbow_stars_night_sky", 1);
+	setup_merch_image("cows_black_cowprint_hills_stars", 1);
+	setup_merch_image("cows_clouds_over_starry_mountains", 1);
+	setup_merch_image("cows_dark_forest_red_moon_birds", 1);
+	setup_merch_image("cows_in_city_blood_moon_stars", 1);
+	setup_merch_image("cows_in_city_with_moon_and_stars", 1);
+	setup_merch_image("cows_in_futuristic_city_with_blimp", 1);
+	setup_merch_image("cows_moon_and_cloudy_lighthouse", 1);
+	setup_merch_image("cows_night_city_colorful_windows", 1);
+	setup_merch_image("cows_on_cozy_forest_cabin_at_night", 1);
+	setup_merch_image("cows_on_purple_spaceships_stars", 1);
+	setup_merch_image("cows_on_spaceships_crescent_moon", 1);
+	setup_merch_image("cows_trees_stars_looming_saturn", 1);
+	setup_merch_image("flying_cows_mountains_balloon", 1);
+	setup_merch_image("little_prince_space_cow_on_planets", 1);
+	setup_merch_image("space_blimp_crescent_moon_cows", 1);
+	setup_merch_image("space_blimp_with_cows_and_circles", 1);
+	setup_merch_image("space_cow_blue_and_purple_saturn", 1);
+	setup_merch_image("space_cow_fish_in_space", 1);
+	setup_merch_image("space_cow_on_spaceship_with_stars", 1);
+	setup_merch_image("space_cow_rainbow_on_cozy_rooftops", 1);
+	setup_merch_image("space_cows_on_cozy_night_buildings", 1);
+	setup_merch_image("space_cows_on_heartbeat_mountain", 1);
+	setup_merch_image("space_cows_on_moon_with_stars", 1);
+	setup_merch_image("space_cows_on_night_city_buildings", 1);
+	setup_merch_image("space_cows_on_night_city_buildings_2", 1);
+	setup_merch_image("space_cows_on_pink_moon_with_stars", 1);
+	setup_merch_image("space_cows_on_stars_and_planets", 1);
+	setup_merch_image("space_cows_on_stars_with_friends", 1);
+	setup_merch_image("space_cows_on_tree_with_stars", 1);
+	setup_merch_image("space_cows_with_spaceship_and_stars", 1);
+	setup_merch_image("space_cows_with_stars_and_planets", 1);
+	
+	
+	// SELECTING RANDOM TITLE AND STARS
+	function select_image(directory, element_id, max_number)
+	{
+		var number=random_number(1, max_number);
+		var file=directory + "/" + number + ".png";
+		document.getElementById(element_id).src=file;
+	}
+	function setup_image(directory, element_id, max_number)
+	{
+		// chooses a random header image until it exists
+		document.getElementById(element_id).onerror=function()
+		{
+			// image did not load
+			select_image(directory, element_id, max_number);
+		}
+		select_image(directory, element_id, max_number);
+		
+		// sets up switching images
+ 		var time_between_img_switches=random_number(18000, 22000); // in miliseconds
+ 		var timer=setInterval(function()
+		{
+			select_image(directory, element_id, max_number);
+		}, time_between_img_switches);
+ 		
+	}
+	setup_image("header", "header", 6);
+	setup_image("stars/2", "stars_2", 10);
+	setup_image("stars/3", "stars_3", 10);
+	setup_image("stars/5_top", "stars_5_top", 10);
+	setup_image("stars/5_bottom", "stars_5_bottom", 10);
+	
+	
+	// WIGGLE STARS
+	function wiggle_star(element_id)
+	{
+		current_file = document.getElementById(element_id).src;
+		new_file = current_file;
+		
+		var regex = /^(.*[^r])([r]?)([.]png)$/g;
+		var outcome = regex.exec(current_file);
+		if(outcome.length == 4) // 3 results, as expected
+		{
+			var current_rotation = outcome[2];
+			if(current_rotation.length == 0)
+			{
+				new_file = outcome[1] + "r" + outcome[3];
+			}
+			else
+			{
+				new_file = outcome[1] + outcome[3];
+			}
+			
+		}
+		document.getElementById(element_id).src = new_file;
+	}
+	
+	
+	// CUSTOMIZES VIEW FOR TOUCH DEVICES
+	var is_touch_device = ('ontouchstart' in document.documentElement);
+	if(is_touch_device)
+	{
+		// adds outline to merch links
+		var elements=document.getElementsByName("merch-block");
+		for(var index=0; index < elements.length; index++)
+		{
+			elements[index].setAttribute("class", "touchscreen-merch-block");
+		}
+
+		var elements=document.getElementsByName("verticalspace");
+		for(var index=0; index < elements.length; index++)
+		{
+			elements[index].innerHTML="<br><br><br>";
+		}
+	
+		var elements=document.getElementsByName("smallverticalspace");
+		for(var index=0; index < elements.length; index++)
+		{
+			elements[index].innerHTML="<br><br>";
+		}
+	}
+	
+	// FORCES SCROLL TO TOP ON RELOAD
+// 	window.onbeforeunload = function()
+// 	{
+// 	  window.scrollTo(0, 0);
+// 	}
+// 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+// 	document.body.scrollTop = 0; // For Safari
+	
+</script>
+</body>
+</html>
