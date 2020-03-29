@@ -192,17 +192,6 @@ div
 <font color="#FFFFFF">
 <div class="slowappear" align="center">
 <h2>✨ <u>s h o p</u> ✨</h2>
-<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('amazon_shirts_us', document.getElementById('amazon_shirts_us').src);" onmouseover="track_merch_mouseover('amazon_shirts_us', document.getElementById('amazon_shirts_us').src);">
-	<font color="#FFFFFF">
-	<a href="shirt_shop_us.html" class="merch-title">
-		<p>
-		<img src="empty.jpg" width="350" height="263" class="padded-all-sides" id="amazon_shirts_us">
-		<br>t-shirts (US shop—ships internationally)
-		</p>
-	</a>
-	</font>
-</div>
-<span name = "verticalspace"></span>
 <div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('amazon_shirts_de', document.getElementById('amazon_shirts_de').src);" onmouseover="track_merch_mouseover('amazon_shirts_de', document.getElementById('amazon_shirts_de');">
 	<font color="#FFFFFF">
 	<a href="shirt_shop_europe.html" class="merch-title">
@@ -224,22 +213,27 @@ div
 	</a>
 	</font>
 </div>
+<span name = "verticalspace"></span>
+<div style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8cmVjdCB4PScwJyB5PScwJyB3aWR0aD0nMScgaGVpZ2h0PScxJyBmaWxsPSdibGFjaycgLz4KPC9zdmc+'); background-repeat: repeat;" class="merch-block" name="merch-block" align="center" onclick="track_merch_click('amazon_shirts_us', document.getElementById('amazon_shirts_us').src);" onmouseover="track_merch_mouseover('amazon_shirts_us', document.getElementById('amazon_shirts_us').src);">
+	<font color="#FFFFFF">
+	<a href="https://www.redbubble.com/shop/nightlyfieldlog?iaCode=u-tees" class="merch-title">
+		<p>
+		<img src="empty.jpg" width="350" height="95" class="padded-all-sides" style="opacity:0">
+		<span style="background-color:#FFFFFF">
+		<br>US Amazon t-shirt shop
+		<br>temporarily unavailable due to coronavirus
+		<br>click for RedBubble shirt shop
+		<br>(ships internationally)</span>
+		<br><img src="empty.jpg" width="350" height="95" class="padded-all-sides" style="opacity:0">
+		</p>
+	</a>
+	</font>
+</div>
 </div>
 </font>
 
 <span name = "smallverticalspace"></span>
 <div class="slowappear" align="center">
-<div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('popsockets_us', document.getElementById('popsockets_us').src);" onmouseover="track_merch_mouseover('popsockets_us', document.getElementById('popsockets_us').src);">
-	<font color="#FFFFFF">
-	<a href="popsocket_shop_us.html" class="merch-title">
-		<p>
-		<img src="empty.jpg" width="350" height="263" class="padded-all-sides" id="popsockets_us">
-		<br>popsockets (US shop—ships internationally)
-		</p>
-	</a>
-	</font>
-</div>
-<span name = "verticalspace"></span>
 <div class="merch-block" name="merch-block" align="center" onclick="track_merch_click('popsockets_de', document.getElementById('popsockets_de').src);" onmouseover="track_merch_mouseover('popsockets_de', document.getElementById('popsockets_de').src);">
 	<font color="#FFFFFF">
 	<a href="popsocket_shop_europe.html" class="merch-title">
@@ -430,11 +424,11 @@ div
 	
 	// SELECTING RANDOM MERCH IMAGES
 	// sets merch image to a random new merch image
-	var us_shirt_number = 1;
-	var uk_shirt_number = 1;
-	var de_shirt_number = 1;
-	var us_popsocket_number = 1;
-	var de_popsocket_number = 1;
+	var us_shirt_number = 0;
+	var uk_shirt_number = 0;
+	var de_shirt_number = 0;
+	var us_popsocket_number = 0;
+	var de_popsocket_number = 0;
 	function select_merch_image(directory, element_id, max_number)
 	{
 		var img_number=random_number(1, max_number);
@@ -521,10 +515,10 @@ div
 	setup_merch_image("die_cut_stickers", "die_cut_sticker", 38);
 	setup_merch_image("rectangular_stickers", "rectangular_sticker", 8);
 	setup_merch_image("transparent_stickers", "transparent_sticker", 33);
-	setup_merch_image("amazon_shirts", "amazon_shirts_us", 18);
+// 	setup_merch_image("amazon_shirts", "amazon_shirts_us", 18);
 	setup_merch_image("amazon_shirts", "amazon_shirts_de", 18);
 	setup_merch_image("amazon_shirts", "amazon_shirts_uk", 18);
-	setup_merch_image("popsockets", "popsockets_us", 14);
+// 	setup_merch_image("popsockets", "popsockets_us", 14);
 	setup_merch_image("popsockets", "popsockets_de", 14);
 	setup_merch_image("other_things", "other_things", 15);
 	
